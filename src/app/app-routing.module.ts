@@ -1,16 +1,30 @@
-import { NgModule } from '@angular/core';
+import { NgModule, createComponent } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { CommunicationComponent } from './communication/communication.component';
 import { MesssageSenderComponent } from './messsage-sender/messsage-sender.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { LoginComponent } from './login/login.component';
+import { RecoverPasswordComponent } from './recover-password/recover-password.component';
+import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 
 const routes: Routes = [
-
   {
-    path :'', pathMatch:"full", component:AppComponent
+    path:"",pathMatch:"full",component:AppComponent
   },
-
+  {
+    path:"create",component:CreateAccountComponent
+  },
+  {
+    path:"login",component:LoginComponent
+  },
+  {
+    path:"login/passwordRecovery",component:RecoverPasswordComponent
+  },
+  {
+    path:"create/termsAndConditions",component:TermsAndConditionsComponent
+  },
   {
     path: "mainMenu", component: MainMenuComponent
   },
@@ -22,6 +36,7 @@ const routes: Routes = [
 
     path:"message", component: MesssageSenderComponent
   }
+
 ];
 
 @NgModule({
