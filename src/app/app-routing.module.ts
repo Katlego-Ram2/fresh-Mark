@@ -5,6 +5,8 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { LoginComponent } from './login/login.component';
 import { RecoverPasswordComponent } from './recover-password/recover-password.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
+import { ProfileComponent } from './profile/profile.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 const routes: Routes = [
   {
@@ -18,6 +20,12 @@ const routes: Routes = [
   },
   {
     path:"login/passwordRecovery",component:RecoverPasswordComponent
+  },
+  {
+    path:"profile",component:ProfileComponent
+  },
+  {
+    path:"user-details",component:UserDetailsComponent
   },
   {
     path:"create/termsAndConditions",component:TermsAndConditionsComponent

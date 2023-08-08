@@ -8,13 +8,17 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { RecoverPasswordComponent } from './recover-password/recover-password.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProfileComponent } from './profile/profile.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     CreateAccountComponent,
     RecoverPasswordComponent,
-    TermsAndConditionsComponent
+    TermsAndConditionsComponent,
+    ProfileComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
